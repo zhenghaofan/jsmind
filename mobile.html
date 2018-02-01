@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>jsMind</title>
+    <link type="text/css" rel="stylesheet" href="./css/jsmind.css" />
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+
+    <div class="nodes">
+        <button class="btn btn-default tag" ontouchmove="touching(event)" ontouchend="move(event)">aaa</button>
+        <button class="btn btn-default tag" ontouchmove="touching(event)" ontouchend="move(event)">bbb</button>
+        <button class="btn btn-default tag" ontouchmove="touching(event)" ontouchend="move(event)">ccc</button>
+        <button class="btn btn-default tag" ontouchmove="touching(event)" ontouchend="move(event)">ddd</button>
+        <div class="buttons" style="position:absolute;right: 10px;top: -10px">
+            <button class="btn btn-default showdata">显示数据</button>
+            <!-- <button class="btn btn-default undo">撤销</button> -->
+            <button class="btn btn-default reset">重置</button>
+        </div>
+    </div>
+    <div id="jsmind_container" style="width:100%;height:200px"></div>
+    <script src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/jsmind.js"></script>
+    <script type="text/javascript" src="./js/jsmind.draggable.js"></script>
+    <script type="text/javascript" src="./js/mobile.js"></script>
+</body>
+
+</html>

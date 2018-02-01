@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>jsMind</title>
+    <link type="text/css" rel="stylesheet" href="./css/jsmind.css" />
+    <link type="text/css" rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+
+    <div class="mobile-nodes">
+        <button class="btn btn-default tag" draggable="true" ondragstart="drag(event)" ondragend="end(event)">aaa</button>
+        <button class="btn btn-default tag" draggable="true" ondragstart="drag(event)" ondragend="end(event)">bbb</button>
+        <button class="btn btn-default tag" draggable="true" ondragstart="drag(event)" ondragend="end(event)">ccc</button>
+        <button class="btn btn-default tag" draggable="true" ondragstart="drag(event)" ondragend="end(event)">ddd</button>
+        <div class="mobile-buttons" >
+            <button class="btn btn-default upload-btn">上传附件</button>
+            <!-- <button class="btn btn-default undo">撤销</button> -->
+            <button class="btn btn-default reset">重置</button>
+        </div>
+    </div>
+    <div id="jsmind_container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <script src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/jsmind.js"></script>
+    <script type="text/javascript" src="./js/jsmind.draggable.js"></script>
+    <script type="text/javascript" src="./js/pad.js"></script>
+</body>
+
+</html>
